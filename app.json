@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "novo",
-    "slug": "novo",
+    "name": "primeiro-app",
+    "slug": "primeiro-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
