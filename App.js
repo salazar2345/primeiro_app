@@ -1,19 +1,25 @@
-import { View } from "react-native";
-import Header from "./src/components/Header";
-import Stories from "./src/components/Stories"
+import { StyleSheet, View} from "react-native";
+import FotoPerfil from "../instagram/src/assets/perfil.jpg";
+import InfoProfile from "./src/components/InfoProfile";
 
-
-export default function App() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        marginVertical: 32,
-        marginHorizontal: 16,
-      }}
-    >
-     <Header />
-      <Stories/>
-    </View>
-  );
+export default function App(){
+    return (
+        <View style={styles.container}>
+            <InfoProfile
+            image = {FotoPerfil}
+            publi = {180}
+            followers = {2000}
+            following = {160}
+            descriptions="Salazar"/>
+        </View>
+    );
 }
+
+const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        backgroundColor:'#fff',
+        marginHorizontal:16,
+        marginVertical:35,
+    },
+})
