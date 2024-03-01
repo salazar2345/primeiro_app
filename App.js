@@ -1,6 +1,7 @@
 import { StyleSheet, View} from "react-native";
-import FotoPerfil from "../instagram/src/assets/perfil.jpg";
+import FotoPerfil from "../primeiro-app/src/assets/perfil.jpg";
 import InfoProfile from "./src/components/InfoProfile";
+import MyPosts from "./src/assets/Components/MyPosts";
 
 export default function App(){
     return (
@@ -11,6 +12,7 @@ export default function App(){
             followers = {2000}
             following = {160}
             descriptions="Salazar"/>
+            <MyPosts/>
         </View>
     );
 }
